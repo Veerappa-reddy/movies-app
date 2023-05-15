@@ -1,0 +1,70 @@
+.login-page-bg-container {
+  background-image: url('https://res.cloudinary.com/veerappa/image/upload/v1684153238/netfilx_1_w9wi4y.svg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-form-container {
+  background-color: #0c0b10;
+  opacity: 0.8;
+  padding: 40px 30px;
+  width: 370px;
+  height: 340px;
+  padding-top: 30px;
+}
+.login-heading {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  /* identical to box height, or 125% */
+  text-align: center;
+
+  /* General/White */
+
+  color: #ffffff;
+}
+.user-name-container {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0px;
+}
+.username {
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  padding-bottom: 7px;
+  color: #ffffff;
+}
+.user-name-input {
+  height: 40px;
+  background-color: #333333;
+  border-radius: 2px;
+  outline: none;
+  border: 0px solid;
+  padding-left: 15px;
+  color: #fff;
+}
+.login-button {
+  background: #e50914;
+  border-radius: 8px;
+  color: #fff;
+  width: 310px;
+  height: 40px;
+  margin-top: 15px;
+  border: 0px solid;
+}
+.error-msg {
+  color: #dc2626;
+  padding-bottom: 0px;
+}
