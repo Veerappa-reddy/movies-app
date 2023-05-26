@@ -3,9 +3,9 @@
   background-size: cover;
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 .login-form-container {
   background-color: #0c0b10;
@@ -13,7 +13,6 @@
   padding: 40px 30px;
   width: 370px;
   height: 340px;
-  padding-top: 30px;
 }
 .login-heading {
   font-family: 'HK Grotesk';
@@ -67,4 +66,75 @@
 .error-msg {
   color: #dc2626;
   padding-bottom: 0px;
+}
+.movies-logo {
+  align-self: flex-start;
+}
+.app-logo-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 38%;
+  padding-top: 40px;
+}
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 70%;
+}
+.mobile-login-page-container {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .login-page-bg-container {
+    display: none;
+  }
+  .mobile-login-page-container {
+    display: block;
+    background-color: #0c0b10;
+    height: 100vh;
+    padding: 25px;
+  }
+  .mob-app-logo {
+    width: 130px;
+    /* margin: 30px;
+    margin-left: 50px; */
+    margin-top: 10px;
+  }
+  .mob-login-heading {
+    text-align: left;
+    color: #fff;
+    font-weight: 500;
+    font-size: 45px;
+    padding-bottom: 25px;
+  }
+  .mobile-login-form {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    align-items: center;
+    margin: 40px;
+    margin-top: 100px;
+    /* width: 450px; */
+  }
+  .mob-login-form-container {
+    margin-top: 100px;
+  }
+  .mob-login-button {
+    background: #e50914;
+    border-radius: 8px;
+    color: #fff;
+    width: 350px;
+    height: 40px;
+    margin-top: 15px;
+    border: 0px solid;
+  }
+  .mobile-username-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    margin-bottom: 25px;
+  }
 }

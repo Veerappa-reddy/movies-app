@@ -1,0 +1,127 @@
+.slider-container {
+  /* margin: 0px 50px; */
+  padding: 0px 70px;
+  margin-bottom: 10px;
+}
+.home-bg-container {
+  background-color: black;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+.home-bg-container::-webkit-scrollbar {
+  display: none;
+}
+.movies-list-heading {
+  color: #fff;
+  padding: 20px 0px;
+  padding-left: 90px;
+  font-size: 22px;
+  font-family: 'Roboto';
+}
+.poster-container {
+  height: 75vh;
+  background-size: cover;
+}
+.poster-title {
+  color: #fff;
+  font-family: 'Roboto';
+  padding: 10px 5px;
+}
+.poster-overview {
+  color: #fff;
+  font-family: 'Roboto';
+  padding: 10px 5px;
+  align-self: flex-start;
+  width: 450px;
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  /* align-self: flex-start; */
+}
+.poster-details-container1 {
+  padding-left: 132px;
+  padding-right: 32px;
+  padding-bottom: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 75vh;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(24, 24, 24, 0.546875) 38.26%,
+    #131313 82.82%,
+    #131313 88.68%,
+    #131313 88.61%
+  );
+}
+.play-btn {
+  padding: 8px 24px;
+  gap: 8px;
+  margin: 10px 5px;
+  width: 74px;
+  height: 40px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 4px;
+  border: none;
+}
+.loader-bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+.poster-loader-bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+@media screen and (max-width: 576px) {
+  /* .poster-container {
+    width: 100%;
+    background-size: cover;
+  } */
+  .poster-details-container1 {
+    padding-left: 20px;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(24, 24, 24, 0.546875) 38.26%,
+      #131313 79.82%,
+      #131313 88.68%,
+      #131313 88.61%
+    );
+    min-height: 10vh;
+    /* margin-bottom: 0px; */
+    padding-top: 100px;
+  }
+  .poster-overview {
+    width: 350px;
+    font-size: 15px;
+    font-style: italic;
+    font-family: 'HK Grotesk';
+  }
+  .poster-container {
+    height: 50vh;
+  }
+  .poster-title {
+    font-size: 27px;
+  }
+  .play-btn {
+    width: 70px;
+    height: 35px;
+  }
+  .trend-container {
+    /* margin: 0px; */
+    margin-top: 30px;
+  }
+  .movies-list-heading {
+    padding-left: 20px;
+  }
+  .slider-container {
+    padding: 0px 35px;
+  }
+}

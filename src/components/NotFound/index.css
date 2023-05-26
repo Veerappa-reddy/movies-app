@@ -1,0 +1,33 @@
+.not-found-container {
+  background-image: url('https://res.cloudinary.com/veerappa/image/upload/v1684564641/page_not_found_gzxkmw.svg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.not-found-heading {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: 'Inter';
+  padding-bottom: 20px;
+}
+.not-found-description {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 200;
+  font-family: 'Inter';
+  padding-bottom: 4px;
+}
+.go-home-button {
+  background-color: #fff;
+  color: #171f46;
+  border: none;
+  font-size: 10px;
+  width: 70px;
+  height: 22px;
+  border-radius: 3px;
+  margin-top: 10px;
+}

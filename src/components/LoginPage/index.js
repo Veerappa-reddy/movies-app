@@ -46,40 +46,92 @@ class LoginPage extends Component {
     const {errorMsg, errorMsgStatus} = this.state
 
     return (
-      <div className="login-page-bg-container">
-        <form
-          className="login-form-container"
-          onSubmit={this.onSubmitLoginDetails}
-        >
-          <h1 className="login-heading">Login</h1>
-          <div className="user-name-container">
-            <label htmlFor="username" className="username">
-              USERNAME
-            </label>
-            <input
-              type="text"
-              id="username"
-              className="user-name-input"
-              onChange={this.onChangeUsername}
+      <>
+        <div className="login-page-bg-container">
+          <div className="app-logo-container">
+            <img
+              src="https://res.cloudinary.com/veerappa/image/upload/v1684172378/movies_app_logo_aykn91.svg"
+              alt="movies-app-logo"
+              className="movies-logo"
             />
           </div>
-          <div className="user-name-container">
-            <label htmlFor="password" className="username">
-              PASSWORD
-            </label>
-            <input
-              type="text"
-              id="password"
-              className="user-name-input"
-              onChange={this.onChangePassword}
-            />
-            {errorMsgStatus && <p className="error-msg">{errorMsg}</p>}
+          <div className="login-container">
+            <form
+              className="login-form-container"
+              onSubmit={this.onSubmitLoginDetails}
+            >
+              <h1 className="login-heading">Login</h1>
+              <div className="user-name-container">
+                <label htmlFor="username" className="username">
+                  USERNAME
+                </label>
+                <input
+                  type="text"
+                  id="username"
+                  className="user-name-input"
+                  onChange={this.onChangeUsername}
+                />
+              </div>
+              <div className="user-name-container">
+                <label htmlFor="password" className="username">
+                  PASSWORD
+                </label>
+                <input
+                  type="password"
+                  id="password"
+                  className="user-name-input"
+                  onChange={this.onChangePassword}
+                />
+                {errorMsgStatus && <p className="error-msg">{errorMsg}</p>}
+              </div>
+              <button type="submit" className="login-button">
+                Login
+              </button>
+            </form>
           </div>
-          <button type="submit" className="login-button">
-            Login
-          </button>
-        </form>
-      </div>
+        </div>
+        <div className="mobile-login-page-container">
+          <img
+            src="https://res.cloudinary.com/veerappa/image/upload/v1684172378/movies_app_logo_aykn91.svg"
+            alt="movies-app-logo"
+            className="mob-app-logo"
+          />
+          <div className="mobile-login-form">
+            <form
+              className="mob-login-form-container"
+              onSubmit={this.onSubmitLoginDetails}
+            >
+              <h1 className="mob-login-heading">Login</h1>
+              <div className="mobile-username-container">
+                <label htmlFor="username" className="username">
+                  USERNAME
+                </label>
+                <input
+                  type="text"
+                  id="username"
+                  className="user-name-input"
+                  onChange={this.onChangeUsername}
+                />
+              </div>
+              <div className="mobile-username-container">
+                <label htmlFor="password" className="username">
+                  PASSWORD
+                </label>
+                <input
+                  type="password"
+                  id="password"
+                  className="user-name-input"
+                  onChange={this.onChangePassword}
+                />
+                {errorMsgStatus && <p className="error-msg">{errorMsg}</p>}
+              </div>
+              <button type="submit" className="mob-login-button">
+                Sign in
+              </button>
+            </form>
+          </div>
+        </div>
+      </>
     )
   }
 }

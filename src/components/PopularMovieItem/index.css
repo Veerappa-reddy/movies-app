@@ -1,0 +1,13 @@
+.popular-item-image {
+  width: 255px;
+  height: 170px;
+  border-radius: 8px;
+  margin: 10px;
+  /* margin-left: 17px; */
+}
+@media screen and (max-width: 576px) {
+  .popular-item-image {
+    width: 170px;
+    height: 110px;
+  }
+}
