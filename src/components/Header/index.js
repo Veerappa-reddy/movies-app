@@ -4,7 +4,31 @@ import {AiOutlineSearch, AiFillCloseCircle} from 'react-icons/ai'
 import './index.css'
 
 class Header extends Component {
-  state = {showMenu: false}
+  constructor() {
+    super()
+
+    this.state = {showMenu: false}
+  }
+
+  //   componentDidMount() {
+  //     window.addEventListener('scroll', this.handleScroll)
+  //   }
+
+  //   componentWillUnmount() {
+  //     window.removeEventListener('scroll', this.handleScroll)
+  //   }
+
+  //   handleScroll() {
+  //     const {isVisible} = this.state
+  //     const currentScrollPos = window.pageYOffset
+  //     const isScrolledDown = currentScrollPos < this.prevScrollPos
+
+  //     if (isScrolledDown !== isVisible) {
+  //       this.setState({isVisible: isScrolledDown})
+  //     }
+
+  //     this.prevScrollPos = currentScrollPos
+  //   }
 
   clickMenu = () => {
     this.setState(prevState => ({showMenu: !prevState.showMenu}))
@@ -17,8 +41,9 @@ class Header extends Component {
   render() {
     const {showMenu} = this.state
     return (
+      //   <div className={isVisible ? 'navbar' : 'navbar hidden'}>
       <>
-        <div className="header-container">
+        <div className="header-container ">
           <div className="header-routes-container">
             <img
               src="https://res.cloudinary.com/veerappa/image/upload/v1684172378/movies_app_logo_aykn91.svg"
@@ -83,6 +108,7 @@ class Header extends Component {
             />
           </ul>
         )}
+        {/* </div> */}
       </>
     )
   }

@@ -44,6 +44,20 @@
 .mobile-header-container {
   display: none;
 }
+/* .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: top 0.3s;
+}
+
+.navbar.hidden {
+  top: -60px;
+} */
 @media screen and (max-width: 576px) {
   .header-container {
     display: none;
