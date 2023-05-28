@@ -42,7 +42,7 @@
 .poster-details-container1 {
   padding-left: 132px;
   padding-right: 32px;
-  padding-bottom: 140px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -96,7 +96,8 @@
     );
     min-height: 10vh;
     /* margin-bottom: 0px; */
-    padding-top: 100px;
+    padding-top: 120px;
+    padding-bottom: 140px;
   }
   .poster-overview {
     width: 350px;
