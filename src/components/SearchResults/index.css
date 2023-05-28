@@ -70,6 +70,15 @@
     padding: 1px;
   }
   .search-input {
-    width: 70px;
+    width: 110px;
+  }
+  .no-result-image {
+    width: 280px;
+  }
+  .no-results-description {
+    text-align: center;
+  }
+  .no-results-container {
+    margin-top: 200px;
   }
 }

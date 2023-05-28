@@ -7,6 +7,7 @@
   height: 70vh;
   background-color: #fff;
   padding: 30px 145px;
+  /* margin-top: 160px; */
 }
 .membership-container {
   display: flex;
@@ -69,6 +70,9 @@
 .logout-btn-container {
   display: flex;
   justify-content: center;
+}
+.veera {
+  display: none;
 }
 @media screen and (max-width: 576px) {
   .account-details {

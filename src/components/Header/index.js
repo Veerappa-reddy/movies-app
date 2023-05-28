@@ -4,31 +4,32 @@ import {AiOutlineSearch, AiFillCloseCircle} from 'react-icons/ai'
 import './index.css'
 
 class Header extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
 
-    this.state = {showMenu: false}
+    this.state = {showMenu: false, isVisible: true}
+    this.handleScroll = this.handleScroll.bind(this)
   }
 
-  //   componentDidMount() {
-  //     window.addEventListener('scroll', this.handleScroll)
-  //   }
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll)
+  }
 
-  //   componentWillUnmount() {
-  //     window.removeEventListener('scroll', this.handleScroll)
-  //   }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll)
+  }
 
-  //   handleScroll() {
-  //     const {isVisible} = this.state
-  //     const currentScrollPos = window.pageYOffset
-  //     const isScrolledDown = currentScrollPos < this.prevScrollPos
+  handleScroll() {
+    const {isVisible} = this.state
+    const currentScrollPos = window.pageYOffset
+    const isScrolledDown = currentScrollPos < this.prevScrollPos
 
-  //     if (isScrolledDown !== isVisible) {
-  //       this.setState({isVisible: isScrolledDown})
-  //     }
+    if (isScrolledDown !== isVisible) {
+      this.setState({isVisible: isScrolledDown})
+    }
 
-  //     this.prevScrollPos = currentScrollPos
-  //   }
+    this.prevScrollPos = currentScrollPos
+  }
 
   clickMenu = () => {
     this.setState(prevState => ({showMenu: !prevState.showMenu}))
@@ -39,17 +40,19 @@ class Header extends Component {
   }
 
   render() {
-    const {showMenu} = this.state
+    const {showMenu, isVisible} = this.state
     return (
-      //   <div className={isVisible ? 'navbar' : 'navbar hidden'}>
-      <>
+      //   <>
+      <div className={isVisible ? 'navbar' : 'navbar hidden'}>
         <div className="header-container ">
           <div className="header-routes-container">
-            <img
-              src="https://res.cloudinary.com/veerappa/image/upload/v1684172378/movies_app_logo_aykn91.svg"
-              alt="movies-app-logo"
-              className="header-app-logo"
-            />
+            <Link to="/">
+              <img
+                src="https://res.cloudinary.com/veerappa/image/upload/v1684172378/movies_app_logo_aykn91.svg"
+                alt="movies-app-logo"
+                className="header-app-logo"
+              />
+            </Link>
             <ul className="header-unorder-list">
               <Link to="/" className="link">
                 <li className="nav-heading">Home</li>
@@ -108,8 +111,8 @@ class Header extends Component {
             />
           </ul>
         )}
-        {/* </div> */}
-      </>
+      </div>
+      /* </> */
     )
   }
 }

@@ -6,12 +6,14 @@
   list-style-type: none;
 }
 .popular-success-container {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   padding: 5px 80px;
+  padding-top: 60px;
 }
 .popular-container {
   background-color: black;
   padding-bottom: 40px;
+  /* min-height: 100vh; */
 }
 .popular-loading-container {
   height: 90vh;
@@ -39,6 +41,7 @@
 @media screen and (max-width: 576px) {
   .popular-success-container {
     padding: 5px 0px;
+    padding-top: 60px;
   }
   .popular-unorder-list {
     display: flex;
